@@ -7,7 +7,7 @@ Port::Port()
   this->arrival_time="00/00/00";
 }
 
-Port::Port(std::string name,std::string arrival_time,std::string departure_time)
+Port::Port(const std::string& name,const std::string& arrival_time,const std::string& departure_time)
 {
   this->name=name;
   this->arrival_time=arrival_time;

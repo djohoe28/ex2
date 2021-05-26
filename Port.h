@@ -18,10 +18,11 @@ class Port
 
   public:
   Port();
-  Port(std::string name,std::string arrival_time,std::string departure_time);
+  Port(const std::string& name,const std::string& arrival_time,const std::string& departure_time);
   Port(const Port& source); 
   Port(Port&& source);
 
+  std::string get_name(){return this->name;}
   std::string get_arrival_time(){return this->arrival_time;}
   std::string get_departure_time(){return this->departure_time;}
 
