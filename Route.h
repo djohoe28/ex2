@@ -1,18 +1,18 @@
 #include "Port.h"
 
-class Route
-{
-  private:
-  Port src; //source port
-  Port des; //destination port
-  int weight;
+class Route {
+private:
+    Port src; // Source Port
+    Port des; // Destination Port
+    int weight; //Route Weight
 
-  public:
-  Route(const Port& src,const Port& des,int weight);
+public:
+    Route(const Port &src, const Port &des, int weight); // Value Constructor
 
-  int get_weihgt(){return this->weight;}
+    int getWeight() { return this->weight; } // {weight} getter.
 
-  int updateWeight(int newWeight); 
-  void printRoute();
+    int setWeight(int newWeight); // {weight} setter.
+
+    void printRoute(); // Print function.
 
 };
