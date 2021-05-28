@@ -13,6 +13,6 @@ public:
 
     int setWeight(int newWeight); // {weight} setter.
 
-    void printRoute(); // Print function.
+    void printRoute(); // Prints function.
 
 };
